@@ -1,0 +1,29 @@
+#!/bin/bash
+
+RED="\e[31m"
+CYAN="\e[36m"
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
+
+FILE="/home/gustavo/.produtividade/todos.txt"
+let lineNumber=1
+
+case "$1" in
+	--show|-s|"")
+		echo -e "${CYAN}> Lista de To-Do's:${ENDCOLOR}"
+		while IFS= read -r line; 
+			do echo -e "${RED}    $lineNumber. $line;${ENDCOLOR}"
+			let lineNumber++
+		done < "${FILE}"
+	;;
+	--add|-a)
+		echo -e "$2" >> "${FILE}" 
+	;;
+	--remove|-r)
+		echo "$(sed "$2"d ${FILE})" > "${FILE}"
+	;;
+	--help|-h)
+		echo -e "${GREEN} Terminal note-taking or to-do list program made in bash${ENDCOLOR}"
+		echo "	-a [message between quotation marks] : Adds the message to your list"
+		echo " 	-r [item number] : Removes the selected item from the list"
+esac

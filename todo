@@ -5,7 +5,7 @@ CYAN="\e[36m"
 GREEN="\e[32m"
 ENDCOLOR="\e[0m"
 
-FILE="/home/gustavo/.produtividade/todos.txt"
+FILE="${HOME}/.productivity/todos.txt"
 let lineNumber=1
 
 case "$1" in

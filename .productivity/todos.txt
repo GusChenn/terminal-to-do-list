@@ -1,1 +1,2 @@
-Ver treinamento de react que o paulo comentou no grupo
+use 'todo -a "task to do"' to add tasks to your list
+use 'todo -r i' to remove the task with index i from the list

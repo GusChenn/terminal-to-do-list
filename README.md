@@ -1,8 +1,5 @@
-# Install script
+# Info
 
-It has to:
-- Move the .productivity folder to the ~/ directory
-- Move the `todo` sript to `/usr/local/bin`
-- Delete the folder itself
+Terminal to-do list made in bash. I'm no expert in bash scripting so feel free to send me any feedack.
 
-While doing progress logs
+

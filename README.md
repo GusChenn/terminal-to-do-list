@@ -6,8 +6,10 @@ Terminal to-do list made in bash. I'm no expert in bash scripting so feel free t
 
 To install the script, just run
 
-> sudo ./install.sh
+```
+sudo ./install.sh
+```
 
 it needs sudo permition so it can copy files to your usr/local/bin folder.
 
-![Sample](./resouces/sample.png)
+![Sample](./resources/sample.png)
